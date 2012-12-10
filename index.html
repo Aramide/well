@@ -24,9 +24,8 @@
             $.defaultPageTransition = none;
             $.defaultDialogTransition = none;
             $.mobile.loadPage( index.html, { showLoadMsg: false } );        });
-            $.mobile.loadPage( checklists.html, { showLoadMsg: false } );        });
-           var isAbs = $.mobile.path.isAbsoluteUrl("http://www.app4brides.com/mall/index.php");
-           var isAbs = $.mobile.path.isAbsoluteUrl("http://www.feminineedge.com/index.html");
+            $.mobile.loadPage( www.app4brides.com/checklists.html, { showLoadMsg: false } );        });
+            $.mobile.loadPage( www.app4brides.com/mall/index.php, { showLoadMsg: false } );        });
            $.mobile.silentScroll(200);
 $.mobile.allowCrossDomainPages = true;
 $.support.cors = true;
@@ -55,9 +54,8 @@ function onButtonTap(e)
             </div>
                 <div class="mvv-navbar mvv-edge-to-edge" data-role="navbar">
                     <ul>
-                        <li><a class="" data-theme="c" href="checklists.html" transition="none">CHECKLISTS</a></li>
-                        <li><a class="" data-theme="c" href="notes.html">THE PLAN</a></li>
-                        <li><a class="ui-btn-active" data-theme="c" href="index.html">ABOUT</a></li>
+                        <li><a class="" data-theme="c" rel="external" href="www.app4brides.com/checklists.html" data-prefetch>CHECKLISTS</a></li>
+                        <li><a class="ui-btn-active" data-theme="c" rel="external" href="www.app4brides.com/mall/index.php" data-prefetch>THE MALL</a></li>
                     </ul>
                 </div>
             <!-- end header -->
@@ -87,7 +85,8 @@ your phone, tablets or desktop. Also visit <span class="mvv-light-green">APP4BRI
                 <li><a href="index.html">ABOUT</a></li>
                     <li><a href="checklists.html">CHECKLISTS</a></li>
                     <li><a href="notes.html">MY WEDDING PLANS</a></li>
-                   
+                   <li><a href="http://www.app4brides.com/mall/index.php">THE MALL</a></li>
+
                 </ul>
         </div>
         <div data-role="footer">
