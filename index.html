@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+    <!--[if IE 7]><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><![endif]-->
+    <title>App4brides</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+    
+    <style>
+    
+   .ui-page { -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -highlight-color: rgba(0,0,0,0); 
+    }
+    </style>
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&amp;v1' rel='stylesheet' type='text/css'/>
+    <link href="css/Site.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript">
+        $(document).bind("mobileinit", function () {
+         
+            $.mobile.getMaxScrollForTransition = none;
+            $.defaultPageTransition = none;
+            $.defaultDialogTransition = none;
+            $.mobile.loadPage( index.html, { showLoadMsg: false } );        });
+            $.mobile.loadPage( checklists.html, { showLoadMsg: false } );        });
+           var isAbs = $.mobile.path.isAbsoluteUrl("http://www.app4brides.com/mall/index.php");
+           var isAbs = $.mobile.path.isAbsoluteUrl("http://www.feminineedge.com/index.html");
+           $.mobile.silentScroll(200);
+$.mobile.allowCrossDomainPages = true;
+$.support.cors = true;
+$.mobile.buttonMarkup.hoverDelay = 0;
+$.mobile.phonegapNavigationEnabled = true
+$("#mybutton").live("tap", onButtonTap);
+function onButtonTap(e)
+{
+	e.preventDefault();
+	var id = e.target.id;
+	alert(id);
+}
+  });
+
+    </script>
+
+   <script src="js/jquery.mobile-1.2.0.min.js"></script>        
+        
+</head>
+<body>
+    <div data-role="page" data-theme="c">
+        <div data-role="header">
+            <div id="header">
+                
+                    <img src="images/Reception.jpg" width="100%">
+            </div>
+                <div class="mvv-navbar mvv-edge-to-edge" data-role="navbar">
+                    <ul>
+                        <li><a class="" data-theme="c" href="checklists.html" transition="none">CHECKLISTS</a></li>
+                        <li><a class="" data-theme="c" href="notes.html">THE PLAN</a></li>
+                        <li><a class="ui-btn-active" data-theme="c" href="index.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            <!-- end header -->
+        </div>
+        <div data-role="content">
+            <div id="about">
+    <h3>
+         <span class="mvv-light-green">APP4BRIDES</span></h3>
+    <p>Your Wedding plans are categorized under different activities or item.  Click on the applicable activity or item. The buttons before or after  an activity or item indicates there are sub categories under. You can write, edit, delete and store notes in your device  by clicking on the sub activity or item in blue.
+				<br /><br />Welcome to APP4BRIDES. Congratulations!!!!!!! This is 
+probably the most exciting time
+of your life!!!!!!!! And we at <span class="mvv-light-green">
+FEMININE EDGE</span> thought it shouldn&#39;t
+be the most stressfull too. So we
+developed this app to help you let 
+off steam and have fun while planning your big day. APP4BRIDE would help 
+you keep tab on your plans.The 
+App contains various checklists to
+help you with planning and a note 
+section where you can type your 
+notes, edit, delete and save notes on 
+your phone, tablets or desktop. Also visit <span class="mvv-light-green">APP4BRIDES MALL</span> for the lastest on bridal couture, accessories and get the chance to get designer wedding gowns at wow prices. App4brides is user friendly, users only have to click on the button on each tab. Start by clicking on checklist panel below or open up the note section also below to start.</p> 
+
+</div>
+
+                <ul data-role="listview">
+                <li><a href="index.html">ABOUT</a></li>
+                    <li><a href="checklists.html">CHECKLISTS</a></li>
+                    <li><a href="notes.html">MY WEDDING PLANS</a></li>
+                   
+                </ul>
+        </div>
+        <div data-role="footer">
+            <div id="footer">
+               
+        <!-- /End Footer -->
+    </div></div></div>
+
+
+    <!-- /End Page -->
+    
+</body>
+</html>
